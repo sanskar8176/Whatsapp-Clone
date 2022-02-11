@@ -61,7 +61,7 @@ const LoginDialog = ({ classes }) => {
     const { account, setAccount,showloginButton, setShowloginButton, showlogoutButton, setShowlogoutButton } = useContext(AccountContext);
 
     const onLoginSuccess = async (res) => {
-        console.log('Login Success:', res.profileObj);
+        // console.log('Login Success:');
         setAccount(res.profileObj);
         setShowloginButton(false);
         setShowlogoutButton(true);
